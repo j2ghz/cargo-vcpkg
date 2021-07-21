@@ -12,11 +12,11 @@ foo = { path = "../foo" }
 
 [package.metadata.vcpkg]
 git = "https://github.com/microsoft/vcpkg"
-rev = "4c1db68"
+rev = "aee68688c3882009d1caafa444bbf49aa7978ac2"
 #branch = "master"
 #tag = "2020.04"
 
 [package.metadata.vcpkg.target]
 x86_64-apple-darwin = { install = ["sdl2"] }
 x86_64-unknown-linux-gnu = { install = ["sdl2"] }
-x86_64-pc-windows-msvc = { triplet = "x64-windows-static", install = ["sdl2"] }
+x86_64-pc-windows-msvc = { triplet = "x64-windows-static", install = ["sdl2", "presentmon"] }
